@@ -2,11 +2,11 @@ import React from 'react'
 
 const Card = ({title, venue, date, timing,learn}) => {
   return (
-    <div className='flex gap-5 mt-[40px] mb-[50px]'>
-        <div className="box w-[40%] h-[250px]  bg-[#3DBBD7]">
+    <div className='flex gap-5 mt-[40px] mb-[50px] mobile-card-event'>
+        <div className="box w-[40%] h-[250px]  bg-[#3DBBD7] mobile-card-div">
 
         </div>
-        <div className="text text-white flex flex-col w-[60%] gap-3 text-2xl ml-[70px]">
+        <div className="text text-white flex flex-col w-[60%] gap-3 text-2xl ml-[70px] mobile-card-div">
             <span className='text-[#00FF84]'>{title}</span>
             <span>Venue: {venue}</span>
             <span>Date: {date}</span>

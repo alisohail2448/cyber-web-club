@@ -47,12 +47,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-section w-full h-[100vh] bg-black mt-[40px]">
+    <div className="contact-section w-full  bg-black mt-[40px]">
       <h3 className="text-[#00FF84] text-3xl text-center ">{`<Contact Us/>`}</h3>
-      <div className="form w-full h-[100%] flex justify-center items-center">
+      <div className="form  h-[100%] flex justify-center items-center mobile-upper-form">
         <form
           action=""
-          className="flex flex-col gap-5"
+          className="flex flex-col gap-5 justify-center  w-[50%] mobile-form"
           onSubmit={formik.handleSubmit}
         >
           <label
@@ -111,7 +111,7 @@ const Contact = () => {
               borderRadius: "8px",
               color: "white",
               marginTop: "30px",
-              width: "30%",
+              width: "100%",
               fontSize: "22px",
             }}
           >{`<SEND/>`}</button>
