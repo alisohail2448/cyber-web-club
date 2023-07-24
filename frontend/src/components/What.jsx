@@ -7,37 +7,30 @@ const What = () => {
   return (
     <div className="what-section mb-[80px]">
         <div className="heading">
-          <button className="mt-[80px] text-white  text-[22px] ml-[110px]">{`<What We Do/>`}</button>
-          <img
-            src={rectangle}
-            alt=""
-            className="absolute top-[2415px] left-[100px] w-[197px]"
-          />
+          <button className="mt-[150px] text-white  text-[22px] ml-[110px]  reuseBtn fontSize p-[15px] relative mobile-subheading">{`<What We Do/>`}
           <img
             src={group7}
             alt=""
-            className="absolute top-[2360px] left-[280px] w-[135px]"
+            className="absolute top-[-42px] right-[-120px] w-[120px]"
           />
+          </button>
         </div>
-        <div className="domains w-full mt-[150px]  ">
-          <div class="grid grid-cols-3 gap-9 px-[120px]">
+        <div className="domains w-full mt-[70px]  ">
+          <div class="grid grid-cols-3 gap-9 px-[120px] mobile-cards">
             <div className="card-bg">
-              <div className="img">
-                <img src={rectangle14} alt="" />
-              </div>
+              <div className="cards">
               <div className="desc">{"<UI/UX/>"}</div>
+              </div>
             </div>
             <div className="card-bg">
-              <div className="img">
-                <img src={rectangle14} alt="" />
-              </div>
+              <div className="cards">
               <div className="desc">{"<AL/ML/>"}</div>
+              </div>
             </div>
             <div className="card-bg">
-              <div className="img">
-                <img src={rectangle14} alt="" />
-              </div>
+              <div className="cards">
               <div className="desc">{"<Data Science/>"}</div>
+              </div>
             </div>
           </div>
         </div>

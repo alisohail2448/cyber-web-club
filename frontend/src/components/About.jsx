@@ -7,22 +7,17 @@ import rectangle from "../images/rectangle-13.svg";
 const About = () => {
   return (
     <div className="about  flex justify-center items-center text-white flex-col z-10" id="about">
-    <button className="mt-[80px] text-[22px]">{`<ABOUT US/>`}</button>
-    <img
-      src={rectangle}
-      alt=""
-      className="absolute top-[866px] w-[167px]"
-    />
+    <button className="mt-[100px] text-[18px] reuseBtn fontSize p-[15px] pt-[30px] pb-[30px] relative">{`<ABOUT US/>`}
     <img
       src={group}
       alt=""
-      className="absolute top-[911px] left-[754px] w-[140px]"
-    />
+      className="absolute bottom-[-108px] left-[192px] h-[107px] mobile-none"
+    /></button>
     <div className="about-section ">
-      <div className="w-[50%] flex justify-center items-center">
-        <img src={mainLogo} width={450} alt="" />
+      <div className="w-[50%] flex justify-center items-center mobile-about-img-size">
+        <img src={mainLogo} width={450} alt=""  />
       </div>
-      <div className="welcomeToOurContainer flex justify-center items-center">
+      <div className="welcomeToOurContainer flex justify-center items-center relative">
         <p className="welcomeToOurSpancyberW">
           <span className="welcomeToOur">{`<p>Welcome to our <span>`}</span>
           <span className="cyberWebClub2">Cyber Web Club</span>
@@ -32,12 +27,13 @@ const About = () => {
             {`Our mission is to foster a community of like-minded individuals who share a love for coding and are eager to expand their skills and knowledge.</p>`}
           </span>
         </p>
-      </div>
-      <img
+        <img
         src={vector}
         alt=""
-        className="absolute top-[1467px] left-[800px] w-[160px]"
+        className="absolute bottom-[126px] left-[140px] w-[180px] mobile-position"
       />
+      </div>
+
     </div>
   </div>
   )

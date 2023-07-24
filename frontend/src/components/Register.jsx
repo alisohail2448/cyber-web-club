@@ -62,11 +62,11 @@ const Register = () => {
   };
 
   return (
-    <div className="contact-section w-full h-[100vh] bg-black mt-[40px]">
+    <div className="contact-section w-full h-[100%] bg-black mt-[40px]">
       <h3 className="text-[#00FF84] text-2xl text-center ">{`<Registration/>`}</h3>
       <div className="form w-full h-[100%] ">
         <form action="" className="flex flex-col gap-5 items-center mt-[40px]" onSubmit={formik.handleSubmit} >
-          <div className=" flex justify-center items-center w-[70%] h-[100%] gap-10">
+          <div className=" flex justify-center items-center w-[70%] h-[100%] gap-10 mobile-register">
             <div className="left w-[50%] h-[100%] gap-5">
               <label
                 htmlFor="name"
@@ -196,15 +196,16 @@ const Register = () => {
             </div>
           </div>
           <button
-            className="mx-auto"
+            className="mx-auto "
             style={{
               background: "#00CF6B",
               padding: "10px 20px",
               borderRadius: "8px",
               color: "white",
-              marginTop: "30px",
-              width: "20%",
+              margin: "0 30px",
+              width: "50%",
               fontSize: "20px",
+              marginBottom :"40px"
             }}
           >{`<SEND/>`}</button>
         </form>
